@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Anish Neema} \\ \vspace{1pt}
+    \small 925-791-0388 $|$ \href{mailto:anish.neema@gatech.edu}{\underline{anish.neema@gatech.edu}} $|$ 
+    \href{https://www.linkedin.com/in/anishneema}{\underline{linkedin.com/in/anishneema}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Georgia Institute of Technology} & Atlanta, GA \\
+        \textit{Bachelor of Science in Computer Engineering} & \textit{Expected 2028} \\
+        \multicolumn{2}{l}{\textit{Relevant Courses: Introduction to Algorithms, Data Structures, Computer Organization, Linear Algebra}} \\
+      \end{tabular*}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Algoverse}{Aug. 2024 -- Current}
+      {Research Intern}{}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a Python LLM framework enabling models to self-assess tool usage via RAG and Knowledge Tracing, reducing API calls by up to 90\% on benchmark QA datasets.}
+        \resumeItem{Accepted and presented findings at NAACL insights workshop.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Code Ninjas}{Apr. 2024 -- Current}
+      {Tutor, Lead Summer Camp Instructor}{}
+      \resumeItemListStart
+        \resumeItem{Delivered comprehensive lessons on the principles of C, JavaScript, and Unity to students aged 6-17, fostering a deep understanding of programming concepts and game development techniques.}
+        \resumeItem{Tutored 50+ students, helping them achieve proficiency in coding and problem-solving.}
+        \resumeItem{Led summer camps teaching kids how to use digital media to document their projects, while maintaining a professional online presence.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gymseekr Mobile App} $|$ \emph{ React Native, AWS Amplify, DynamoDB}}{Jun. 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed \& launched a mobile fitness app using React Native, AWS Amplify, and DynamoDB.}
+            \resumeItem{Led UI design, product features, and back-end integrating user sign-up and management.}
+            \resumeItem{Gained 200+ users since release on Apple App Store \& featured on 'patch', sportsmedical.news.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Bluestamp Engineering} $|$ \emph{Solo Engineer, Arduino, C++, MIT App Inventor}}{Jun. 2024 -- Jul. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed 3D printed emotive robot that helps individuals with alexithymia express their emotions.}
+            \resumeItem{Used Arduino IDE, integrated sensors, servo motors, Bluetooth, and LED matrices to simulate emotional expressions based on user interaction; Wrote C++ code to sync components.}
+            \resumeItem{Created an Android app with MIT App Inventor for remote control, enabling wireless communication and enhancing the robots interactivity and accessibility.}
+            \resumeItem{Documented the entire project, including wiring diagrams, flowcharts, and technical schematics, highlighting the development process, and presented to 30+ engineers at Bluestamp conference.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{American Red Cross} $|$ \emph{National Team Member, DVHS treasurer}}{Aug 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Coded a structured system to organize, filter, and retrieve data on 100+ volunteers using applescript.}
+            \resumeItem{Analyzed data in order to determine which volunteers were likely to contribute to Red Cross causes resulting in facilitating 50+ blood drives across 5 states nationally.}
+            \resumeItem{Led fundraisers raising \$1100+ since August 2024 while managing \$6,200 in funds for a 130+ member club.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DVHS Wrestling Team Captain}}{Nov 2021 -- Mar 2025}
+          \resumeItemListStart
+            \resumeItem{Lead wrestling workshops for 1000+ students.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Academic Leadership Tutor}}{Aug 2024 -- Jun 2025}
+          \resumeItemListStart
+            \resumeItem{Tutored computer science, physics, and English.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS AND AWARDS-----------
+\section{Technical Skills and Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, JavaScript, SQL, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Google Cloud Platform} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib} \\
+     \textbf{Awards}{: AIME Qualifier (Score 9), USA Powerlifting National Champion}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
